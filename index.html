@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>My Webpage</h1>
+    <h2>Welcome to my webpage about ducks</h2>
+    <h3>Ducks are very cute. Here's 100 of them. Please enjoy!</h3>
+    <div class="container">
+        <script>
+            for (var i = 0; i < 100; i++) {
+                document.write('<div class="box"><img src="https://hips.hearstapps.com/hmg-prod/images/how-to-keep-ducks-call-ducks-1615457181.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=1200:*"></div>');
+            }
+            var user_input = prompt("Are ducks cool?");
+            if (user_input.toLowerCase() === "yes") {
+                setTimeout(function() {
+                    alert("Correct! Enjoy looking at the ducks!");
+                }, 100);
+            } else {
+                setTimeout(function() {
+                    alert("Wrong answer. Now look at these ducks.");
+                }, 100);
+            }
+        </script>
+    </div>
+</body>
+</html>
