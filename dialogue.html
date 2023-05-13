@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Dialog Box</title>
+    <style>
+        .dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .dialog p {
+            margin: 0 0 10px 0;
+        }
+
+        .dialog button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dialog">
+        <p>Are ducks cool?</p>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
+
+    <script>
+        var dialog = document.querySelector('.dialog');
+        var yesButton = document.querySelector('#yes');
+        var noButton = document.querySelector('#no');
+
+        yesButton.addEventListener('click', function() {
+            dialog.style.display = 'none';
+            alert('Correct! Enjoy looking at the ducks!');
+        });
+
+        noButton.addEventListener('click', function() {
+            dialog.style.display = 'none';
+            alert('Wrong answer. Now look at these ducks.');
+        });
+    </script>
+
+</body>
+</html>

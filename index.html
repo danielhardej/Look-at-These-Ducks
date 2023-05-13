@@ -7,12 +7,59 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4952500004875297"
      crossorigin="anonymous"></script>
 </head>
+
 <body>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="duck-facts.html">Duck Facts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <h1>My Webpage</h1>
     <h2>Welcome to my webpage about ducks</h2>
     <h3>Ducks are very cute. Here's 100 of them. Please enjoy!</h3>
-<!-- 
+
+    <div class="dialog">
+        <p>Are ducks cool?</p>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+        <div id="message"></div>
+        <button id="close">Close</button>
+    </div>
+
     <script>
+
+        var yes = document.getElementById("yes");
+        var no = document.getElementById("no");
+        var message = document.getElementById("message");
+        var close = document.getElementById("close");
+        var dialog = document.querySelector(".dialog");
+
+        yes.addEventListener("click", function() {
+            message.innerHTML = "Correct! Enjoy looking at the ducks!";
+            close.style.display = "block";
+        });
+
+        no.addEventListener("click", function() {
+            message.innerHTML = "Wrong answer. Now look at these ducks.";
+            close.style.display = "block";
+        });
+
+        close.addEventListener("click", function() {
+            dialog.style.display = "none";
+        });
+
+        dialog.style.display = "block";
+
+    </script>
+
+    <!-- <script>
         var user_input = prompt("Are ducks cool?");
             if (user_input.toLowerCase() === "yes") {
                 setTimeout(function() {
@@ -44,14 +91,19 @@
     </div>
 
     <div class="ad-left">
-        <img src="https://via.placeholder.com/200x1000?text=Left+Ad">
+        <img src="https://via.placeholder.com/300x1000?text=Left+Ad">
     </div>
 
     <div class="ad-right">
-        <img src="https://via.placeholder.com/200x1000?text=Right+Ad">
+        <img src="https://via.placeholder.com/300x1000?text=Right+Ad">
     </div>
-
     
+    <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/daniel-hardej-7351689a/"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
     
    
 

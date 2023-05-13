@@ -1,3 +1,37 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e2d7d7;
+    color: #fff;
+    padding: 10px;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 30px 30%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link, a:visited {
+    color: blue;
+}
+
+nav a:hover {
+    color: red;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +39,7 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 h2 {
@@ -16,6 +50,7 @@ h2 {
 h3 {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -54,17 +89,15 @@ h3 {
 
 .ad-left {
     position: fixed;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-40%);
+    top: 25%;
+    left: 10%;
     z-index: 1;
 }
 
 .ad-right {
     position: fixed;
-    top: 50%;
-    right: 20%;
-    transform: translateY(-40%);
+    top: 25%;
+    right: 10%;
     z-index: 1;
 }
 
@@ -77,4 +110,61 @@ h3 {
     .ad-left, .ad-right {
         display: none;
     }
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #007bff;
+}
+
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.dialog p {
+    margin: 0 0 10px 0;
+}
+
+.dialog button {
+    margin-right: 10px;
+}
+
+.dialog #message {
+    margin-top: 10px;
+}
+
+.dialog #close {
+    display: none;
+    margin-top: 10px;
 }
