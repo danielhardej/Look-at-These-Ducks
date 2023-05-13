@@ -67,3 +67,11 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 768px) {
+    .ad-left, .ad-right {
+        position: fixed;
+        bottom: 0;
+        transform: none;
+    }
+}
