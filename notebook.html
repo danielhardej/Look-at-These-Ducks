@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 80px);
+            grid-template-rows: repeat(10, 80px);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background-color: #ccc;
+            margin: 5px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .ad {
+            background-color: #eee;
+            margin: 5px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .ad img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .left-ad {
+            grid-column: 1 / 2;
+            grid-row: 1 / 11;
+        }
+
+        .right-ad {
+            grid-column: 10 / 11;
+            grid-row: 1 / 11;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Webpage</h1>
+    <h2>Welcome to my webpage about ducks</h2>
+    <h3>Ducks are very cute. Here's 100 of them. Please enjoy!</h3>
+    <div class="container">
+        <div class="left-ad ad">
+            <img src="https://via.placeholder.com/150x600?text=Left+Ad">
+        </div>
+        <script>
+            for (var i = 0; i < 100; i++) {
+                document.write('<div class="box"><img src="https://hips.hearstapps.com/hmg-prod/images/how-to-keep-ducks-call-ducks-1615457181.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=1200:*"></div>');
+            }
+            var user_input = prompt("Are ducks cool?");
+            if (user_input.toLowerCase() === "yes") {
+                setTimeout(function() {
+                    alert("Correct! Enjoy looking at the ducks!");
+                }, 100);
+            } else {
+                setTimeout(function() {
+                    alert("Wrong answer. Now look at these ducks.");
+                }, 100);
+            }
+        </script>
+        <div class="right-ad ad">
+            <img src="https://via.placeholder.com/150x600?text=Right+Ad">
+        </div>
+    </div>
+</body>
+</html>
