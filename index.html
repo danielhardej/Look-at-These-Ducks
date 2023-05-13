@@ -13,9 +13,7 @@
     <h3>Ducks are very cute. Here's 100 of them. Please enjoy!</h3>
     <div class="container">
         <script>
-            for (var i = 0; i < 100; i++) {
-                document.write('<div class="box"><img src="https://hips.hearstapps.com/hmg-prod/images/how-to-keep-ducks-call-ducks-1615457181.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=1200:*"></div>');
-            }
+
             var user_input = prompt("Are ducks cool?");
             if (user_input.toLowerCase() === "yes") {
                 setTimeout(function() {
@@ -26,8 +24,14 @@
                     alert("Wrong answer. Now look at these ducks.");
                 }, 100);
             }
+
+            for (var i = 0; i < 100; i++) {
+                document.write('<div class="box"><img src="https://hips.hearstapps.com/hmg-prod/images/how-to-keep-ducks-call-ducks-1615457181.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=1200:*"></div>');
+            }
+            
         </script>
     </div>
+
     <div class="footnote">
         <p>This webpage was created by <a href="https://github.com/danielhardej">Daniel Hardej</a> with a lot of assitance from <a href="https://github.com/features/copilot/">GitHub Copilot</a>.</p>
     </div>
@@ -40,8 +44,11 @@
         <img src="https://via.placeholder.com/150x600?text=Right+Ad">
     </div>
 
+    <!--
     <div class="ad-bottom">
-        <img src="https://via.placeholder.com/728x90?text=Bottom+Ad">
+        <img src="https://via.placeholder.com/728x120?text=Bottom+Ad">
     </div>
+    -->
+    
 </body>
 </html>

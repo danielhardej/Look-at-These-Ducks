@@ -25,7 +25,6 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-bottom: 100px;
 }
 
 .box {
@@ -42,12 +41,25 @@ h3 {
     max-height: 100%;
 }
 
+.footnote {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #412d2d;
+    position: relative;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .ad-left {
     position: fixed;
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
     z-index: 1;
+    width: 120px;
+    height: 600px;
 }
 
 .ad-right {
@@ -56,25 +68,8 @@ h3 {
     right: 20%;
     transform: translateY(-50%);
     z-index: 1;
-}
-
-.ad-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.footnote {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #412d2d;
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 120px;
+    height: 600px;
 }
 
 @media only screen and (max-width: 768px) {
